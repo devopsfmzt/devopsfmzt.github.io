@@ -25,6 +25,10 @@
          font-style: italic;
          font-family: "Lucida Console", "Courier New", monospace;
         }
+        li {
+         font-style: normal;
+         font-family: "Lucida Console", "Courier New", monospace;
+        }
         h1 {
          display: block;
          font-size: 2em;
@@ -38,8 +42,15 @@
         </style>
   </head>
   <body>
-<h1>Hello World</h1>
-<p class="n">Hier wede ich berichten wie ich das Thema Autonatisierung für mich entdeckt habe.</p>
+<h1>Inhalt:</h1>
+  <ul>
+    <li><a href="#0001">0001</a> Hello World!</li>
+    <li>N.N.</li>
+    <li>N.N.</li>
+  </ul>
+<hr>
+<h1 id="0001">Hello World!</h1>
+<p class="n">Hier wede ich berichten, wie ich das Thema Autonatisierung für mich entdeckt habe.</p>
 <pre>
     <code>
 root@opzserver:~# salt '*' test.ping
@@ -69,7 +80,6 @@ HEROS14:
             7.52.1-5+deb9u15
     </code>
 </pre>
-
-
+<hr>
   </body>
 </html>
