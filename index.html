@@ -14,27 +14,62 @@
           font-family: Consolas,"courier new";
           color: crimson;
           background-color: #f1f1f1;
-          padding: 2px;
-          font-size: 105%;
+          padding: 1px;
+          font-size: 100%;
+        }
+        p.n {
+         font-style: normal;
+         font-family: "Lucida Console", "Courier New", monospace;
+        }
+        p.i {
+         font-style: italic;
+         font-family: "Lucida Console", "Courier New", monospace;
+        }
+        h1 {
+         display: block;
+         font-size: 2em;
+         margin-top: 0.67em;
+         margin-bottom: 0.67em;
+         margin-left: 0;
+         margin-right: 0;
+         font-weight: bold;
+         font-family: "Lucida Console", "Courier New", monospace;
         }
         </style>
   </head>
   <body>
-          Hello World!
-          <br>
-          <pre>
-              <code>
-                root@opzserver:~# salt '*' test.ping
-                FMZTMOBIL:
-                    True
-                HEROS15:
-                    True
-                HEROS16:
-                    True
-                HEROS14:
-                    True
-                root@opzserver:~#
-              </code>
-          </pre>
+<h1>Hello World</h1>
+<p class="n">Hier wede ich berichten wie ich das Thema Autonatisierung für mich entdeckt habe.</p>
+<pre>
+    <code>
+root@opzserver:~# salt '*' test.ping
+FMZTMOBIL:
+    True
+HEROS15:
+    True
+HEROS16:
+    True
+HEROS14:
+    True
+root@opzserver:~#
+    </code>
+</pre>
+<pre>
+    <code>
+root@opzserver:~# salt '*' pkg.upgrade
+FMZTMOBIL:
+    ----------
+HEROS14:
+    ----------
+    curl:
+        ----------
+        new:
+            7.52.1-5+deb9u16
+        old:
+            7.52.1-5+deb9u15
+    </code>
+</pre>
+
+
   </body>
 </html>
